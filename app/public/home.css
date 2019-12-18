@@ -1,11 +1,12 @@
-body{
+/* body{
     padding-right: 200px;
     padding-left: 200px;
-}
+} */
 
-.section.hero {
+.hero {
     text-align: center;
     background-color: lightgray;
-    margin: 50px;
+    /* margin: 50px; */
+    padding: 200px;
     border-radius: 10px;
 }
