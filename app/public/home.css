@@ -1,0 +1,11 @@
+body{
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+.section.hero {
+    text-align: center;
+    background-color: lightgray;
+    margin: 50px;
+    border-radius: 10px;
+}
