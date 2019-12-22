@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     <link rel="stylesheet" href="/app/public/survey.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
   </head>
   <body>
 
@@ -35,14 +36,14 @@
     <div class="field">
         <label class="label">Question 1</label>
         <div class="control">
-            <div class="select">
+            <div class="select" id="q1">
               <select>
-                <option>-----------------------</option>
-                <option>1 (Strongly Disagree)</option>
-                <option>2 (Disagree)</option>
-                <option>3 (Neutral)</option>
-                <option>4 (Agree)</option>
-                <option>5 (Strongly Agree)</option>
+                <option value="empty"></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
               </select>
             </div>
           </div>
@@ -52,14 +53,14 @@
     <div class="field">
     <label class="label">Question 2</label>
     <div class="control">
-        <div class="select">
+        <div class="select" id="q2">
             <select>
-                <option>-----------------------</option>
-                <option>1 (Strongly Disagree)</option>
-                <option>2 (Disagree)</option>
-                <option>3 (Neutral)</option>
-                <option>4 (Agree)</option>
-                <option>5 (Strongly Agree)</option>
+                <option value="empty"></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
         </div>
         </div>
@@ -69,14 +70,14 @@
     <div class="field">
         <label class="label">Question 3</label>
         <div class="control">
-            <div class="select">
+            <div class="select" id="q3">
                 <select>
-                    <option>-----------------------</option>
-                    <option>1 (Strongly Disagree)</option>
-                    <option>2 (Disagree)</option>
-                    <option>3 (Neutral)</option>
-                    <option>4 (Agree)</option>
-                    <option>5 (Strongly Agree)</option>
+                    <option value="empty"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree)</option>
+                    <option value="3">3 (Neutral)</option>
+                    <option value="4">4 (Agree)</option>
+                    <option value="5">5 (Strongly Agree)</option>
                 </select>
             </div>
             </div>
@@ -86,14 +87,14 @@
         <div class="field">
             <label class="label">Question 4</label>
             <div class="control">
-                <div class="select">
+                <div class="select" id="q4">
                   <select>
-                    <option>-----------------------</option>
-                    <option>1 (Strongly Disagree)</option>
-                    <option>2 (Disagree)</option>
-                    <option>3 (Neutral)</option>
-                    <option>4 (Agree)</option>
-                    <option>5 (Strongly Agree)</option>
+                    <option value="empty"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree)</option>
+                    <option value="3">3 (Neutral)</option>
+                    <option value="4">4 (Agree)</option>
+                    <option value="5">5 (Strongly Agree)</option>
                   </select>
                 </div>
               </div>
@@ -103,14 +104,14 @@
         <div class="field">
         <label class="label">Question 5</label>
         <div class="control">
-            <div class="select">
+            <div class="select" id="q5">
                 <select>
-                    <option>-----------------------</option>
-                    <option>1 (Strongly Disagree)</option>
-                    <option>2 (Disagree)</option>
-                    <option>3 (Neutral)</option>
-                    <option>4 (Agree)</option>
-                    <option>5 (Strongly Agree)</option>
+                    <option value="empty"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree)</option>
+                    <option value="3">3 (Neutral)</option>
+                    <option value="4">4 (Agree)</option>
+                    <option value="5">5 (Strongly Agree)</option>
                 </select>
             </div>
             </div>
@@ -120,14 +121,14 @@
         <div class="field">
             <label class="label">Question 6</label>
             <div class="control">
-                <div class="select">
+                <div class="select" id="q6">
                     <select>
-                        <option>-----------------------</option>
-                        <option>1 (Strongly Disagree)</option>
-                        <option>2 (Disagree)</option>
-                        <option>3 (Neutral)</option>
-                        <option>4 (Agree)</option>
-                        <option>5 (Strongly Agree)</option>
+                        <option value="empty"></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neutral)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
                     </select>
                 </div>
                 </div>
@@ -137,14 +138,14 @@
         <div class="field">
             <label class="label">Question 7</label>
             <div class="control">
-                <div class="select">
+                <div class="select" id="q7">
                     <select>
-                        <option>-----------------------</option>
-                        <option>1 (Strongly Disagree)</option>
-                        <option>2 (Disagree)</option>
-                        <option>3 (Neutral)</option>
-                        <option>4 (Agree)</option>
-                        <option>5 (Strongly Agree)</option>
+                        <option value="empty"></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neutral)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
                     </select>
                 </div>
                 </div>
@@ -154,14 +155,14 @@
         <div class="field">
         <label class="label">Question 8</label>
         <div class="control">
-            <div class="select">
+            <div class="select" id="q8">
                 <select>
-                    <option>-----------------------</option>
-                    <option>1 (Strongly Disagree)</option>
-                    <option>2 (Disagree)</option>
-                    <option>3 (Neutral)</option>
-                    <option>4 (Agree)</option>
-                    <option>5 (Strongly Agree)</option>
+                    <option value="empty"></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree)</option>
+                    <option value="3">3 (Neutral)</option>
+                    <option value="4">4 (Agree)</option>
+                    <option value="5">5 (Strongly Agree)</option>
                 </select>
             </div>
             </div>
@@ -171,14 +172,14 @@
         <div class="field">
             <label class="label">Question 9</label>
             <div class="control">
-                <div class="select">
+                <div class="select" id="q9">
                     <select>
-                        <option>-----------------------</option>
-                        <option>1 (Strongly Disagree)</option>
-                        <option>2 (Disagree)</option>
-                        <option>3 (Neutral)</option>
-                        <option>4 (Agree)</option>
-                        <option>5 (Strongly Agree)</option>
+                        <option value="empty"></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neutral)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
                     </select>
                 </div>
                 </div>
@@ -188,23 +189,69 @@
         <div class="field">
             <label class="label">Question 10</label>
             <div class="control">
-                <div class="select">
+                <div class="select" id="q10">
                     <select>
-                        <option>-----------------------</option>
-                        <option>1 (Strongly Disagree)</option>
-                        <option>2 (Disagree)</option>
-                        <option>3 (Neutral)</option>
-                        <option>4 (Agree)</option>
-                        <option>5 (Strongly Agree)</option>
+                        <option value="empty"></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neutral)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
                     </select>
                 </div>
                 </div>
             </div>
             </div>
             <br>
-            <button class="button is-info">Submit Survey</button>
+            <button class="button is-info" id="sumbitButton">Submit Survey</button>
 
         </wrapper>
+
+
+        <div class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+              <header class="modal-card-head">
+                <p class="modal-card-title">Modal title</p>
+                <button class="delete" aria-label="close"></button>
+              </header>
+              <section class="modal-card-body">
+                <!-- Content ... -->
+              </section>
+              <footer class="modal-card-foot">
+                <button class="button is-success">Save changes</button>
+                <button class="button">Cancel</button>
+              </footer>
+            </div>
+          </div>
+
+        <script>
+        $("#submitButton").on("click", function() {
+            console.log("It heard the click");
+            var userData = {
+            name: $("#name").val(),
+            photo: $("#photo").val(),
+            scores:[
+                $("#q1").val(), 
+                $("#q2").val(), 
+                $("#q3").val(), 
+                $("#q4").val(), 
+                $("#q5").val(), 
+                $("#q6").val(), 
+                $("#q7").val(), 
+                $("#q8").val(), 
+                $("#q9").val(), 
+                $("#q10").val(),]
+            }
+            var currentURL = window.location.origin;
+            $.post(currentURL + "/api/friends", userData, function(data){
+            $("matchName").text(data.name);
+            $("matchImg").attr("src", data.photo);
+            $("#resultsModal").modal("toggle");
+            });
+        })
+        </script>
+
 
   </body>
 </html>
