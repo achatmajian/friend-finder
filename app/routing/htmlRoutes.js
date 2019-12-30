@@ -1,13 +1,19 @@
+var express = require('express');
+var router = express.Router();
+var path = require('path');
+var friends = require("../data/friends.js");
 
-var path = require("path");
+var app = express();
 
-module.exports = function(app) {
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
-app.get("/survey", function(req, res){
-    res.sendFile(path.join(__dirname + "/../public/survey.html"));
+router.get('/survey', function(req, res, next) {
+  res.sendFile(path.join(__dirname, "../app/public/survey.html"));
 });
 
-app.get("/", function(req,res){
-    res.sendFile(path.join(__dirname + "/../public/home.html"));
+router.get('/home', function(req, res, next) {
+  res.sendFile(path.join(__dirname, "../app/public/home.html"));
 });
-}
+
+module.exports = router;
